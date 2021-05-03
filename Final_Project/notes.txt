@@ -1,0 +1,76 @@
+yoyoyo
+Fig. 7(b) shows that r2 has no 
+effect on R_0, as my method predicts
+-WHY? b/c would not be fast enough
+to effect wholly susceptible population?
+--rehab process is long as it is, let alone
+enough time to regress back to heavy use
+--but then why r1 matter?
+
+
+CHANGE IN PAPER:
+m=4 now, not m=3
+
+z state var, crystal meth density, is considered like an epidemiological VECTOR
+
+Extensions:
+-explain why my NGM does not work and theirs does + intuition
+-simulate with z=0
+-simplify by removing x equation
+-try non-per-capita expression for policing
+--LOGISTIC GROWTH makes no sense, would add to drug supply at times.
+--Michaelis-Menten-style saturation, b/c police only have so many
+resources
+---greatly changes bifurcation value R_0?
+--Diffusion? No, bc specific to one province, drug supplies not very mobile 
+--according to paper?
+
+-weird, complex conjugate in eigenvalues
+
+-slow n fast dynamics, s through y equilibrate faster than z b/c
+small alphas and nu
+
+
+R_0 and R_1+R_2+R_3 differ my constant 0.1083598, 0.156
+
+
+RISE OF CRYSTAL METH IN SOUTH AFRICA'S WESTERN CAPE
+SIMILARITY TO EPIDEMIOLOGY
+THE STATE VARIABLES
+THE MODEL, BRIEFLY
+-asymmetrical person-supply contacts?
+-NONDIM'D
+-----
+Next-generation Matrix, lil course in how it works
+Quasi-steady state analysis/ slow timescale for drug density equation
+Contour Plots to see effect of parameters on R_0
+-makes sense that r1 increases R0 more than r2 does
+-----
+Retrying next-gen matrix, failure, why?
+Conditional policing
+Saturating policing to model finite resources
+-saturates with respect to drugs(z), heavy users(w) [wiggles?], 
+both light and heavy
+--WOWEE ZOWEEE, the NGM with saturating policing turns out quite nicely
+---quotient rule, eval at DFE, just get z_max/k_m
+--quasi-steady-state analysis with saturating policing
+Does it make sense for a per cap recovery rate >1?? No, because that
+-would produce more quitters/recoveries than there are infected at a given time!!!
+--this explains why in numeric simulations, y(quitters) get so high while
+-- users v and w stay nearly 0
+
+Actually got some small complex conjugates in Jacobian eval at DFE???
+-------
+EXPRESS FRUSTRATION WITH CONTOUR PLOTS, GGPLOT2 THO?????
+
+
+THETA_2 increases R_0, with others held constant
+-matches the paper's findings in contour plots and numerical attempts
+--however, paper is straaaaangely silent on this
+--READ A QUOTATION ON THEIR ANALYSIS OF THIS PHENOMENON TO PAD TIME, YO
+
+Saturating policing does exactly what my intuition would have told me;
+-a lot like most units in this course, many symbols/equations boil down to 
+what you'd expect
+
+
